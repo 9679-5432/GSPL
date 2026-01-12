@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSPL | Teams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px; }
+    </style>
+</head>
+<body class="bg-blue-50">
+
+    <nav class="bg-blue-950 text-white sticky top-0 z-50 shadow-xl border-b-4 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i class="fas fa-cricket text-yellow-500 text-3xl"></i>
+                    <span class="text-3xl brand-font tracking-widest">GSPL</span>
+                </a>
+                <div class="hidden md:flex space-x-8 font-semibold text-sm">
+                    <a href="index.html" class="hover:text-yellow-400 transition">HOME</a>
+                    <a href="fixtures.html" class="hover:text-yellow-400 transition">FIXTURE</a>
+                    <a href="teams.html" class="text-yellow-500">TEAM</a>
+                    <a href="registration.html" class="hover:text-yellow-400 transition">PLAYER REGISTRATION</a>
+                    <a href="gallery.html" class="hover:text-yellow-400 transition">GALLERY</a>
+                    <a href="management.html" class="hover:text-yellow-400 transition">MANAGEMENT</a>
+                    <a href="about.html" class="hover:text-yellow-400 transition">ABOUT US</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-blue-800">
+             <a href="index.html" class="block py-3 px-4 hover:bg-blue-800">HOME</a>
+             <a href="fixtures.html" class="block py-3 px-4 hover:bg-blue-800">FIXTURE</a>
+             <a href="teams.html" class="block py-3 px-4 hover:bg-blue-800 text-yellow-500">TEAM</a>
+             <a href="registration.html" class="block py-3 px-4 hover:bg-blue-800">PLAYER REGISTRATION</a>
+             <a href="gallery.html" class="block py-3 px-4 hover:bg-blue-800">GALLERY</a>
+             <a href="management.html" class="block py-3 px-4 hover:bg-blue-800">MANAGEMENT</a>
+             <a href="about.html" class="block py-3 px-4 hover:bg-blue-800">ABOUT US</a>
+        </div>
+    </nav>
+
+    <section class="py-16 max-w-7xl mx-auto px-4">
+        <h2 class="text-5xl text-center text-blue-900 mb-4">GSPL <span class="text-yellow-600">TEAMS</span></h2>
+        <p class="text-center text-gray-500 mb-12">Click on a team logo to view the squad</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div onclick="openSquad('team1')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-blue-900">
+                    <!-- <i class="fas fa-shield-alt text-5xl text-blue-900"></i> -->
+                    <img src="Images/logo/wicketwarriors.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Wicket Warriors</h3>
+            </div>
+            <div onclick="openSquad('team2')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-yellow-500">
+                    <!-- <i class="fas fa-horse-head text-5xl text-yellow-500"></i> -->
+                     <img src="Images/logo/youngfighter.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Young Fighter XI</h3>
+            </div>
+            <div onclick="openSquad('team3')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-green-600">
+                    <!-- <i class="fas fa-dragon text-5xl text-green-600"></i> -->
+                     <img src="Images/logo/royalrangers.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Royal Rangers</h3>
+            </div>
+            <div onclick="openSquad('team4')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-red-600">
+                    <!-- <i class="fas fa-bolt text-5xl text-red-600"></i> -->
+                     <img src="Images/logo/thunderxi.jpg" style="width:100%" alt="" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Thunder XI</h3>
+            </div>
+            <div onclick="openSquad('team5')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-purple-600">
+                    <!-- <i class="fas fa-fire text-5xl text-purple-600"></i> -->
+                     <img src="Images/logo/Kingsford_logo.png" alt="">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Kingsford 07</h3>
+            </div>
+
+           <div onclick="openSquad('team6')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-orange-500">
+                    <!-- <i class="fas fa-shield-alt text-5xl text-blue-900"></i> -->
+                     <img src="Images/logo/angel.jpg" alt="" class="w-full h-full object-cover rounded-full" >
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Athletics Angel</h3>
+            </div>
+
+           <div onclick="openSquad('team7')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-pink-900">
+                    <!-- <i class="fas fa-shield-alt text-5xl text-blue-900"></i> -->
+                     <img src="Images/logo/ghanarampurriders.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">Ghanarampur Riders</h3>
+            </div>
+
+            <div onclick="openSquad('team8')" class="cursor-pointer group text-center">
+                <div class="bg-white p-6 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 transition duration-300 w-40 h-40 mx-auto flex items-center justify-center border-4 border-violet-900">
+                    <!-- <i class="fas fa-shield-alt text-5xl text-blue-900"></i> -->
+                     <img src="Images/logo/mtihmxi.jpg" alt="circular" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-blue-900">M.T.I.H.M XI</h3>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <div id="squad-modal" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-md w-full overflow-hidden shadow-2xl animate-fade-in-up">
+            <div class="bg-blue-900 p-4 flex justify-between items-center text-white">
+                <h3 id="modal-title" class="text-2xl font-bold">Team Name</h3>
+                <button onclick="closeSquad()" class="text-yellow-400 hover:text-white text-2xl">&times;</button>
+            </div>
+            <div class="p-6 max-h-[60vh] overflow-y-auto">
+                <h4 class="text-sm uppercase tracking-wide text-gray-500 mb-2">Full Squad</h4>
+                <ul id="modal-list" class="text-blue-900 font-medium">
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

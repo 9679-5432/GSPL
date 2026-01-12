@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSPL | About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-950 text-white sticky top-0 z-50 shadow-xl border-b-4 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i class="fas fa-cricket text-yellow-500 text-3xl"></i>
+                    <span class="text-3xl brand-font tracking-widest">GSPL</span>
+                </a>
+                <div class="hidden md:flex space-x-8 font-semibold text-sm">
+                    <a href="index.html" class="hover:text-yellow-400 transition">HOME</a>
+                    <a href="fixtures.html" class="hover:text-yellow-400 transition">FIXTURE</a>
+                    <a href="teams.html" class="hover:text-yellow-400 transition">TEAM</a>
+                    <a href="registration.html" class="hover:text-yellow-400 transition">PLAYER REGISTRATION</a>
+                    <a href="gallery.html" class="hover:text-yellow-400 transition">GALLERY</a>
+                    <a href="management.html" class="hover:text-yellow-400 transition">MANAGEMENT</a>
+                    <a href="about.html" class="text-yellow-500">ABOUT US</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-blue-800">
+             <a href="index.html" class="block py-3 px-4 hover:bg-blue-800">HOME</a>
+             <a href="fixtures.html" class="block py-3 px-4 hover:bg-blue-800">FIXTURE</a>
+             <a href="teams.html" class="block py-3 px-4 hover:bg-blue-800">TEAM</a>
+             <a href="registration.html" class="block py-3 px-4 hover:bg-blue-800">PLAYER REGISTRATION</a>
+             <a href="gallery.html" class="block py-3 px-4 hover:bg-blue-800">GALLERY</a>
+             <a href="management.html" class="block py-3 px-4 hover:bg-blue-800">MANAGEMENT</a>
+             <a href="about.html" class="block py-3 px-4 hover:bg-blue-800 text-yellow-500">ABOUT US</a>
+        </div>
+    </nav>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-5xl text-blue-900 mb-6">OUR <span class="text-yellow-600">VISION</span></h2>
+            <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                The <strong>Ghanarampur Super Premier League (GSPL)</strong> was founded with a single mission: to unearth local talent and provide a professional platform for cricket enthusiasts in our region. We believe that passion, when met with opportunity, creates legends.
+            </p>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                From humble beginnings on local grounds to a professionally managed league, GSPL stands for integrity, sportsmanship, and the sheer love of the game.
+            </p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
